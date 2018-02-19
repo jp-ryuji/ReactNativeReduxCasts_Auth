@@ -10,6 +10,7 @@ import {
   FIREBASE_STORAGE_BUCKET,
   FIREBASE_MESSAGING_SENDER_ID
 } from 'react-native-dotenv';
+import LoginForm from './components/LoginForm';
 
 class App extends Component {
   componentWillMount() {
@@ -27,7 +28,7 @@ class App extends Component {
     return (
       <View>
         <Header headerText='Authentication' />
-        <Text>App app</Text>
+        <LoginForm />
       </View>
     );
   }
